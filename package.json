@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "devextreme": "^23.1.4",
+    "devextreme-cli": "^1.6.0",
+    "node-firebird": "^1.1.5"
+  }
+}
