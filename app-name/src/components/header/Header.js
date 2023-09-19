@@ -1,12 +1,14 @@
 import React from 'react';
 import Toolbar, { Item } from 'devextreme-react/toolbar';
 import Button from 'devextreme-react/button';
-import UserPanel from '../user-panel/UserPanel';
+// import UserPanel from '../user-panel/UserPanel';
 import './Header.scss';
 import { Template } from 'devextreme-react/core/template';
-
+import { useNavigate} from  'react-router-dom';
 
 export default function Header({ menuToggleEnabled, title, toggleMenu }) {
+  const navigate = useNavigate();
+
   return (
     <header className={'header-component'}>
       <Toolbar className={'header-toolbar'}>
@@ -23,24 +25,10 @@ export default function Header({ menuToggleEnabled, title, toggleMenu }) {
           cssClass={'header-title'}
           text={title}
           visible={!!title}
+
+          onClick={()=>navigate('/') }
         />
-        <Item
-          location={'after'}
-          locateInMenu={'auto'}
-          menuItemTemplate={'userPanelTemplate'}
-        >
-          <Button
-            className={'user-button authorization'}
-            width={210}
-            height={'100%'}
-            stylingMode={'text'}
-          >
-            <UserPanel menuMode={'context'} />
-          </Button>
-        </Item>
-        <Template name={'userPanelTemplate'}>
-          <UserPanel menuMode={'list'} />
-        </Template>
+       
       </Toolbar>
     </header>
 )}

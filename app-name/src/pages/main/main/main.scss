@@ -1,0 +1,45 @@
+
+// main.scss
+.MainHome {
+  width: 100%;
+  overflow-x: hidden; // 너비가 100% 이상으로 확장되는 것을 방지
+
+    // 웹브라우저별로 스크롤바를 숨기기 위한 스타일
+    &::-webkit-scrollbar {
+      display: none; // Chrome, Safari, Edge에서 스크롤바 숨기기
+    }
+    -ms-overflow-style: none;  // IE, Edge에서 스크롤바 숨기기
+    scrollbar-width: none; // Firefox에서 스크롤바 숨기기
+
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  div {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 50px 0; // 간단하게 높이를 조절하기 위한 패딩
+
+    &.section1 {
+      height: 300px;
+      background-color: #E57373;
+    }
+
+    &.section2 {
+      height: 400px; 
+      background-color: #81C784;
+    }
+
+    &.section3 {
+      height: 350px;
+      background-color: #64B5F6;
+    }
+
+    &.section4 {
+      height: 450px;
+      background-color: #FFD54F;
+    }
+  }
+}

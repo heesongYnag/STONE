@@ -1,0 +1,84 @@
+// SignUp.scss
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('https://img.freepik.com/free-vector/abstract-technological-background_23-2148897676.jpg?w=1800&t=st=1693892978~exp=1693893578~hmac=a3e450d1055b39599eb60a70509b30659c3ab88adb68205f9b8659a5402931d5'); // 이미지 경로 수정 필요
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 50px 120px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  min-width: 400px;
+  margin-top: 30px;
+  
+
+  h6 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #d6d6d6;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    div {
+      margin-bottom: 10px;
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        color: #aaa;
+      }
+
+      input {
+        width: 100%;
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+        outline: none;
+
+        &:focus {
+          border-color: #0077ff;
+          box-shadow: 0 0 8px rgba(0, 119, 255, 0.2);
+        }
+      }
+    }
+  }
+
+  .links {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    a {
+      margin: 15px;
+    }
+  }
+
+  button {
+    padding: 20px 40px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0077ff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #0055cc;
+    }
+  }
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}

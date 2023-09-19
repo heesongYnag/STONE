@@ -1,9 +1,43 @@
-@import "../../themes/generated/variables.base.scss";
 
+// scss
 .footer {
-  display: block;
-  color: rgba($base-text-color, alpha($base-text-color) * 0.7);
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  padding-top: 20px;
-  padding-bottom: 24px;
+  width: 100%;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  padding: 30px 10%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .footer-logo {
+      img {
+        margin-top: 20px;
+        width: 200px;
+      }
+    }
+
+    .footer-info {
+      p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    text-align: center;
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
 }

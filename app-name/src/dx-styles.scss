@@ -86,3 +86,69 @@ html, body {
 * {
   box-sizing: border-box;
 }
+
+
+
+// css
+.insert_employee {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.grid-container div {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-container input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+}
+
+
+// main 등 기타
+.main {
+  min-height: 100%;
+  height: auto !important;
+  flex-direction: column;
+  align-items: center;
+}
+.mainContent {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  padding: 1rem;
+  width: 1200px;
+  align-items: center;
+}
+
+// 관리자
+.dx-drawer-panel-content {
+  background-color: #283c55;
+}
+.header-title {
+  cursor: pointer;
+}
+

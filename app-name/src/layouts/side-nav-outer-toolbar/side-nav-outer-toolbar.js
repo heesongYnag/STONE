@@ -8,9 +8,6 @@ import { useScreenSize } from '../../utils/media-query';
 import { Template } from 'devextreme-react/core/template';
 import { useMenuPatch } from '../../utils/patches';
 
-
-
-
 export default function SideNavOuterToolbar({ title, children }) {
   const scrollViewRef = useRef(null);
   const navigate = useNavigate();
